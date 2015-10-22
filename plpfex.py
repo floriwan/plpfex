@@ -11,6 +11,7 @@ import os.path
 import urllib2
 import time
 from optparse import OptionParser
+from HTMLParser import HTMLParser
 
 verbose = False
 
@@ -20,10 +21,35 @@ id_ceiling = 'gCeiling'
 id_range = 'gRange'
 
 #-------------------------------------------------------------------------------
+class MyHTMLParser(HTMLParser):
+
+    def __init__(self):
+        self.mtow = 0
+
+    def handle_starttag(self, tag, attrs):
+        
+        for name, value in attrs:
+            if name == 'id' and value == 'gMTOW':
+                self.mtow = 1
+                
+    def handle_data(self, data):
+        if self.mtow == 1:
+            print "MTOW ", data
+                
+        
+#    def handle_endtag(self, tag):
+#        print "Encountered an end tag :", tag
+#    def handle_data(self, data):
+#        print "Encountered some data  :", data
+
+#-------------------------------------------------------------------------------
 def send_request(url_request):
     print "request url : %s" % url_request
-    content = urllib2.urlopen(url_request).read()
-    print content
+    html_content = urllib2.urlopen(url_request).read()
+    if verbose: print html_content
+    
+    parser = MyHTMLParser()
+    parser.feed(html_content)
     
 #-------------------------------------------------------------------------------
 def parse_icao_list(filename):
@@ -39,7 +65,7 @@ def parse_icao_list(filename):
         if verbose: print url
         send_request(url)
         
-        # sleep 5 seconds to send not to much request to eurocontrol :-)
+        # sleep 5 seconds to send not to many request to eurocontrol :-)
         time.sleep(5)
         
 #-------------------------------------------------------------------------------
