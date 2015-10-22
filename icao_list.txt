@@ -1,242 +1,242 @@
-A124 
-A140 
-A225 
-A306 
-A30B 
-A310 
-A318 
-A319 
-A320 
-A321 
-A330 
-A332 
-A333 
-A340 
-A342 
-A343 
-A345 
-A346 
-A350 
-A35J 
-A358 
-A359 
-A388 
-A3ST 
-A748 
-AC68 
-AC90 
-AN12 
-AN24 
-AN26 
-AN28 
-AN30 
-AN32 
-AN72 
-AS32 
-AT43 
-AT45 
-AT46 
-AT72 
-AT73 
-AT75 
-AT76 
-ATP 
-B105 
-B190 
-B212 
-B412 
-B429 
-B461 
-B462 
-B463 
-B703 
-B712 
-B720 
-B721 
-B722 
-B731 
-B732 
-B733 
-B734 
-B735 
-B736 
-B737 
-B738 
-B739 
-B741 
-B742 
-B743 
-B744 
-B748 
-B74R 
-B74S 
-B752 
-B753 
-B762 
-B763 
-B764 
-B772 
-B77L 
-B773 
-B77W 
-B783 
-B788 
-B789 
-BA11 
-BCS1 
-BCS3 
-BELF 
-BN2P 
-C130 
-C162 
-C172 
-C77R 
-C182S 
-C208 
-C210 
-C212 
-C25A 
-C25B 
-C25C 
-C46 
-C500 
-C510 
-C525 
-C550 
-C560 
-C56X 
-C650 
-C680 
-C750 
-CL2T 
-CL44 
-CL60 
-CN35 
-CONC 
-CONI 
-COUC 
-CRJ1 
-CRJ2 
-CRJ7 
-CRJ9 
-CRJX 
-CVLP 
-CVLT 
-D228 
-D328 
-DC10 
-DC3 
-DC6 
-DC85 
-DC86 
-DC87 
-DC9 
-DC91 
-DC92 
-DC93 
-DC94 
-DC95 
-DH2T 
-DH8A 
-DH8B 
-DH8C 
-DH8D 
-DHC2 
-DHC3 
-DHC4 
-DHC6 
-DHC7 
-DOVE 
-E110 
-E120 
-E135 
-E145 
-E170 
-E170 
-E190 
-E190 
-E545 
-E135 
-E190 
-E50P 
-E55P 
-EC25 
-EC45 
-EXPL 
-F100 
-F27 
-F28 
-F50 
-F70 
-G159 
-G21 
-G73T 
-GLEX 
-GLF4 
-GLF5 
-GLF6 
-H25B 
-H25C 
-HERN 
-I114 
-IL18 
-IL62 
-IL76 
-IL86 
-IL96 
-J328 
-JS31 
-JS32 
-JS41 
-JU52 
-L101 
-L188 
-L410 
-LOAD 
-MD11 
-MD81 
-MD82 
-MD83 
-MD87 
-MD88 
-MD90 
-MI8 
-MU2 
-N262 
-NOMA 
-P68 
-PA31 
-PA46 
-PC12 
-PC6T 
-RJ1H 
-R200 
-RJ70 
-RJ85 
-RX1H 
-RX85 
-S210 
-S58T 
-S601 
-S61 
-S65C 
-S76 
-S92 
-SB20 
-SC7 
-SF34 
-SH33 
-SH36 
-SU95 
-T134 
-T144 
-T154 
-T204 
-TB20 
-TRIS 
-VISC 
-WW24 
-Y12 
-YK40 
-YK42 
-YS11 
+A124 Antonov AN-124 Ruslan
+A140 Antonov AN-140
+A225 Antonov An-225 Mriya
+A306 Airbus A300-600
+A30B Airbus A300
+A310 Airbus A310
+A318 Airbus A318
+A319 Airbus A319
+A320 Airbus A320
+A321 Airbus A321
+A330 Airbus A330
+A332 Airbus A330-200
+A333 Airbus A330-300
+A340 Airbus A340
+A342 Airbus A340-200
+A343 Airbus A340-300
+A345 Airbus A340-500
+A346 Airbus A340-600
+A350 Airbus A350
+A35J Airbus A350-1000
+A358 Airbus A350-800
+A359 Airbus A350-900
+A388 Airbus A380-800
+A3ST Airbus A300-600ST Beluga Freighter
+A748 Hawker Siddeley HS 748
+AC68 Gulfstream/Rockwell (Aero) Commander
+AC90 Gulfstream/Rockwell (Aero) Turbo Commander
+AN12 Antonov AN-12
+AN24 Antonov AN-24
+AN26 Antonov AN-26
+AN28 Antonov AN-28
+AN30 Antonov AN-30
+AN32 Antonov AN-32
+AN72 Antonov AN-72 / AN-74
+AS32 Eurocopter AS332 Super Puma
+AT43 Aerospatiale/Alenia ATR 42-300 / 320
+AT45 Aerospatiale/Alenia ATR 42-500
+AT46 Aerospatiale/Alenia ATR 42-600
+AT72 Aerospatiale/Alenia ATR 72
+AT73 Aerospatiale/Alenia ATR 72-200 series
+AT75 Aerospatiale/Alenia ATR 72-500
+AT76 Aerospatiale/Alenia ATR 72-600
+ATP  British Aerospace ATP
+B105 Eurocopter (MBB) Bo.105
+B190 Beechcraft 1900
+B212 Bell 212
+B412 Bell 412
+B429 Bell 429
+B461 BAe 146-100
+B462 BAe 146-200
+B463 BAe 146-300
+B703 Boeing 707
+B712 Boeing 717
+B720 Boeing 720B
+B721 Boeing 727-100
+B722 Boeing 727-200
+B731 Boeing 737-100
+B732 Boeing 737-200
+B733 Boeing 737-300
+B734 Boeing 737-400
+B735 Boeing 737-500
+B736 Boeing 737-600
+B737 Boeing 737-700
+B738 Boeing 737-800
+B739 Boeing 737-900
+B741 Boeing 747-100
+B742 Boeing 747-200
+B743 Boeing 747-300
+B744 Boeing 747-400
+B748 Boeing 747-8
+B74R Boeing 747SR
+B74S Boeing 747SP
+B752 Boeing 757-200
+B753 Boeing 757-300
+B762 Boeing 767-200
+B763 Boeing 767-300
+B764 Boeing 767-400
+B772 Boeing 777-200
+B77L Boeing 777-200LR / 777F
+B773 Boeing 777-300
+B77W Boeing 777-300ER
+B783 Boeing 787-3[2]
+B788 Boeing 787-8[2]
+B789 Boeing 787-9[2]
+BA11 British Aerospace (BAC) One Eleven
+BCS1 Bombardier CS100
+BCS3 Bombardier CS300
+BELF Shorts SC-5 Belfast
+BN2P Pilatus Britten-Norman BN-2A/B Islander
+C130 Lockheed L-182 / 282 / 382 (L-100) Hercules
+C162 Cessna 162
+C172 Cessna 172
+C77R Cessna 177 Cardinal RG
+C182SCessna 182 Skylane
+C208 Cessna 208 Caravan
+C210 Cessna 210 Centurion
+C212 CASA / IPTN 212 Aviocar
+C25A Cessna Citation CJ2
+C25B Cessna Citation CJ3
+C25C Cessna Citation CJ4
+C46  Curtiss C-46 Commando
+C500 Cessna Citation I
+C510 Cessna Citation Mustang
+C525 Cessna CitationJet
+C550 Cessna Citation II
+C560 Cessna Citation V
+C56X Cessna Citation Excel
+C650 Cessna Citation III
+C680 Cessna Citation Sovereign
+C750 Cessna Citation X
+CL2T Bombardier 415
+CL44 Canadair CL-44
+CL60 Canadair Challenger
+CN35 CASA/IPTN CN-235
+CONC Aerospatiale/BAC Concorde
+CONI Lockheed L-1049 Super Constellation
+COUC Helio H-250 Courier / H-295 / 385 Super Courier
+CRJ1 Canadair Regional Jet 100
+CRJ2 Canadair Regional Jet 200
+CRJ7 Canadair Regional Jet 700
+CRJ9 Canadair Regional Jet 900
+CRJX Canadair Regional Jet 1000
+CVLP Convair CV-240 & -440
+CVLT Convair CV-580
+D228 Fairchild Dornier Do.228
+D328 Fairchild Dornier Do.328
+DC10 Douglas DC-10
+DC3  Douglas DC-3
+DC6  Douglas DC-6
+DC85 Douglas DC-8-50
+DC86 Douglas DC-8-62
+DC87 Douglas DC-8-72
+DC9  Douglas DC-9
+DC91 Douglas DC-9-10
+DC92 Douglas DC-9-20
+DC93 Douglas DC-9-30
+DC94 Douglas DC-9-40
+DC95 Douglas DC-9-50
+DH2T De Havilland Canada DHC-2 Turbo-Beaver
+DH8A De Havilland Canada DHC-8-100 Dash 8 / 8Q
+DH8B De Havilland Canada DHC-8-200 Dash 8 / 8Q
+DH8C De Havilland Canada DHC-8-300 Dash 8 / 8Q
+DH8D De Havilland Canada DHC-8-400 Dash 8Q
+DHC2 De Havilland Canada DHC-2 Beaver
+DHC3 De Havilland Canada DHC-3 Otter
+DHC4 De Havilland Canada DHC-4 Caribou
+DHC6 De Havilland Canada DHC-6 Twin Otter
+DHC7 De Havilland Canada DHC-7 Dash 7
+DOVE De Havilland DH.104 Dove
+E110 Embraer EMB 110 Bandeirante
+E120 Embraer EMB 120 Brasilia
+E135 Embraer RJ135
+E145 Embraer RJ145
+E170 Embraer 170
+E170 Embraer 175
+E190 Embraer 190
+E190 Embraer 195
+E545 Embraer Legacy 450
+E135 Embraer Legacy 600
+E190 Embraer Lineage 1000
+E50P Embraer Phenom 100
+E55P Embraer Phenom 300
+EC25 Eurocopter EC225 Super Puma
+EC45 Eurocopter EC145
+EXPL MD Helicopters MD900 Explorer
+F100 Fokker 100
+F27  Fokker F27 Friendship
+F28  Fokker F28 Fellowship
+F50  Fokker 50
+F70  Fokker 70
+G159 Gulfstream Aerospace G-159 Gulfstream I
+G21  Grumman G-21 Goose
+G73T Grumman G-73 Turbo Mallard
+GLEX Canadair Global Express
+GLF4 Gulfstream IV
+GLF5 Gulfstream V
+GLF6 Gulfstream G650
+H25B British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900
+H25C British Aerospace 125-1000 series / Hawker/Raytheon 1000
+HERN De Havilland DH.114 Heron
+I114 Ilyushin IL114
+IL18 Ilyushin IL18
+IL62 Ilyushin IL62
+IL76 Ilyushin IL76
+IL86 Ilyushin IL86
+IL96 Ilyushin IL96
+J328 Fairchild Dornier 328JET
+JS31 British Aerospace Jetstream 31
+JS32 British Aerospace Jetstream 32
+JS41 British Aerospace Jetstream 41
+JU52 Junkers Ju52/3M
+L101 Lockheed L-1011 Tristar
+L188 Lockheed L-188 Electra
+L410 LET 410
+LOAD Ayres LM200 Loadmaster
+MD11 McDonnell Douglas MD-11
+MD81 McDonnell Douglas MD-81
+MD82 McDonnell Douglas MD-82
+MD83 McDonnell Douglas MD-83
+MD87 McDonnell Douglas MD-87
+MD88 McDonnell Douglas MD-88
+MD90 McDonnell Douglas MD-90
+MI8  MIL Mi-8 / Mi-17 / Mi-171 / Mil-172
+MU2  Mitsubishi Mu-2
+N262 Aerospatiale (Nord) 262
+NOMA Government Aircraft Factories N22B / N24A Nomad
+P68  Partenavia P.68
+PA31 Piper PA-31 Navajo
+PA46 Piper PA-46
+PC12 Pilatus PC-12
+PC6T Pilatus PC-6 Turbo Porter
+RJ1H Avro RJ100
+R200 Robin HR200/R2000 series, Alpha160A
+RJ70 Avro RJ70
+RJ85 Avro RJ85
+RX1H Avro RJX100
+RX85 Avro RJX85
+S210 Aerospatiale (Sud Aviation) Se.210 Caravelle
+S58T Sikorsky S-58T
+S601 Aerospatiale SN.601 Corvette
+S61  Sikorsky S-61
+S65C Eurocopter (Aerospatiale) SA365C / SA365N Dauphin 2
+S76  Sikorsky S-76
+S92  Sikorsky S-92
+SB20 Saab 2000
+SC7  Shorts SC-7 Skyvan
+SF34 Saab SF340A/B
+SH33 Shorts SD.330
+SH36 Shorts SD.360
+SU95 Sukhoi Superjet 100
+T134 Tupolev Tu-134
+T144 Tupolev Tu-144
+T154 Tupolev Tu-154
+T204 Tupolev Tu-204 / Tu-214
+TB20 Socata Trinidad TB-20
+TRIS Pilatus Britten-Norman BN-2A Mk III Trislander
+VISC Vickers Viscount
+WW24 Israel Aircraft Industries 1124 Westwind
+Y12  Harbin Yunshuji Y12
+YK40 Yakovlev Yak-40
+YK42 Yakovlev Yak-42
+YS11 NAMC YS-11
