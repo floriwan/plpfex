@@ -1,2 +1,2 @@
 # plpfex
-extract aircarft performance data from eurocontrol internet page
+extract aircraft performance data from eurocontrol internet page
