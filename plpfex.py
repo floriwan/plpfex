@@ -10,46 +10,49 @@ import sys
 import os.path
 import urllib2
 import time
+import re
 from optparse import OptionParser
-from HTMLParser import HTMLParser
 
 verbose = False
 
 id_mtow = 'gMTOW'
+id_cruise_speed = 'gVCSknots'
+
 id_length = 'wsLabelLength'
 id_ceiling = 'gCeiling'
 id_range = 'gRange'
 
+aircraft_data = {}
+
+# regular expression to extract the data in the html page
+data_pattern = re.compile("^.*<span id=\"[a-zA-z]*\">(?P<data>.*)</span>$")
+
 #-------------------------------------------------------------------------------
-class MyHTMLParser(HTMLParser):
-
-    def __init__(self):
-        self.mtow = 0
-
-    def handle_starttag(self, tag, attrs):
+def extract_data(line, data_type):
+    match = data_pattern.match(line.strip())
+    print match.group('data')
+    aircraft_data[data_type] = match.group('data')
+    
+#-------------------------------------------------------------------------------
+def parse_html_page(html_content):
+    for line in html_content:
         
-        for name, value in attrs:
-            if name == 'id' and value == 'gMTOW':
-                self.mtow = 1
-                
-    def handle_data(self, data):
-        if self.mtow == 1:
-            print "MTOW ", data
-                
+        if verbose: print "parse html line :%s" % line.strip
         
-#    def handle_endtag(self, tag):
-#        print "Encountered an end tag :", tag
-#    def handle_data(self, data):
-#        print "Encountered some data  :", data
+        if line.find(id_mtow) != -1:            
+            extract_data(line, id_mtow)
+            
+        if line.find(id_cruise_speed) != -1:
+            extract_data(line, id_cruise_speed)
 
 #-------------------------------------------------------------------------------
 def send_request(url_request):
-    print "request url : %s" % url_request
-    html_content = urllib2.urlopen(url_request).read()
-    if verbose: print html_content
+    if verbose: print "request url : %s" % url_request
+    html_content = urllib2.urlopen(url_request)
+    if verbose: print html_content   
+    parse_html_page(html_content.readlines())
     
-    parser = MyHTMLParser()
-    parser.feed(html_content)
+    print aircraft_data
     
 #-------------------------------------------------------------------------------
 def parse_icao_list(filename):
@@ -59,10 +62,8 @@ def parse_icao_list(filename):
     icao_file = open(filename, "r")
    
     for icao_line in icao_file:
-        if verbose: print icao_line.strip()
-
+        print "get data for icao type : %s" % icao_line.strip()
         url = "https://contentzone.eurocontrol.int/aircraftperformance/details.aspx?ICAO=%s&" % icao_line.strip()
-        if verbose: print url
         send_request(url)
         
         # sleep 5 seconds to send not to many request to eurocontrol :-)
