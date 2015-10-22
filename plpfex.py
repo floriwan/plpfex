@@ -25,6 +25,7 @@ id_range = 'gRange'
 id_length = 'wsLabelLength'
 
 aircraft_data = {}
+line_count = 1
 
 # regular expression to extract the data in the html page
 data_pattern = re.compile("^.*(<span id=\"[a-zA-z]+\">|<span id=\"[a-zA-z]+\" class=\"[a-zA-z]+\">)(?P<data>.+)</span>.*$")
@@ -42,7 +43,7 @@ def extract_data(line, data_type):
 def parse_html_page(html_content):
     for line in html_content:
         
-        if verbose: print "parse html line :%s" % line.strip
+        if verbose: print "parse html line :%s" % line.strip()
         
         if line.find(id_mtow) != -1:            
             extract_data(line, id_mtow)
@@ -61,7 +62,7 @@ def parse_html_page(html_content):
    
         if line.find('passengers') != -1:
             pos = line.find('passengers')
-            aircraft_data[id_pax] = line[pos-4: pos]
+            aircraft_data[id_pax] = line[pos-4: pos].strip()
 
 #-------------------------------------------------------------------------------
 def send_request(url_request):
@@ -75,22 +76,26 @@ def send_request(url_request):
 #-------------------------------------------------------------------------------
 def append_data(outfilename):
     
-    line_count = 1
+    global line_count
+    
+    print "append "+aircraft_data[id_icao]+ " to file : "+outfilename
+    
     out_string = ""
     
     out_string += str(line_count)+','+aircraft_data[id_icao]+','
     out_string += aircraft_data[id_plane_desc]+','
-    out_string += ','+aircraft_data[id_pax]+','+aircraft_data[id_range]+','
-    out_string += ','+aircraft_data[id_length]+',,,'+aircraft_data[id_mtow]+','
-    out_string += aircraft_data[id_ceiling]+','+aircraft_data[id_cruise_speed]+','
-    out_string += ',,,'
+    out_string += ','+aircraft_data[id_pax]+',\"'+aircraft_data[id_range]+'\",'
+    out_string += ',\"'+aircraft_data[id_length]+'\",,,\"'+aircraft_data[id_mtow]+'\",'
+    out_string += aircraft_data[id_ceiling]+',\"'+aircraft_data[id_cruise_speed]+'\",'
+    out_string += ',,\n'
     
-    print out_string
+    if verbose: print out_string
     
-    #with open(outfilename, "a") as outfile:
-    #    out_string += line_count
-            
-    #outfile.close()
+    with open(outfilename, "a") as outfile:
+        outfile.write(out_string)
+    outfile.close()
+    
+    line_count+=1
     
 #-------------------------------------------------------------------------------
 def parse_icao_list(infile, outfile):
