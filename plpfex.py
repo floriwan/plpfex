@@ -35,9 +35,15 @@ data_pattern = re.compile("^.*(<span id=\"[a-zA-z]+\">|<span id=\"[a-zA-z]+\" cl
 
 #-------------------------------------------------------------------------------
 def extract_data(line, data_type):
+
+    if verbose: 
+        print "current line : %s" % line
+        print "data type : %s" % data_type
+    
     match = data_pattern.match(line.strip())
-    if verbose: print match.group('data')
-    aircraft_data[data_type] = match.group('data')
+    if match:
+        if verbose: print match.group('data')
+        aircraft_data[data_type] = match.group('data')
     
 #-------------------------------------------------------------------------------
 def parse_html_page(html_content):
@@ -70,13 +76,17 @@ def send_request(url_request):
     html_content = urllib2.urlopen(url_request)
     if verbose: print html_content   
     parse_html_page(html_content.readlines())
-    
-    print aircraft_data
 
 #-------------------------------------------------------------------------------
 def append_data(outfilename):
     
     global line_count
+    
+    if not aircraft_data[id_mtow]: 
+        print "no data for aircraft : "+aircraft_data[id_icao]
+        return
+    
+    if not aircraft_data.has_key(id_pax): aircraft_data[id_pax] = ""
     
     print "append "+aircraft_data[id_icao]+ " to file : "+outfilename
     
@@ -120,8 +130,8 @@ def parse_icao_list(infile, outfile):
         # append data for this aircraft to file
         append_data(outfile)
         
-        # todo clean up the dictonary
-        # aircraft_data.empty()
+        # clean up the dictonary
+        aircraft_data.clear()
         
         # sleep 5 seconds to send not to many request to eurocontrol :-)
         time.sleep(5)
