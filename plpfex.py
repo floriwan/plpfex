@@ -1,8 +1,8 @@
 '''
 author: florian
 
-eurocontrol performce data url
-https://contentzone.eurocontrol.int/aircraftperformance/details.aspx?ICAO=A109&
+extract aircaft data from flugzeuginfo.net
+http://www.flugzeuginfo.net/acdata_dt.php#0
 
 '''
 
